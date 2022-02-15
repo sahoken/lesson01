@@ -1,6 +1,6 @@
-const a = process.argv[2];
-let b =Math.floor(a/100);
-let c = a-b*100
-let d =Math.floor(c/10);
-let e = a-b*100-d*10;
-console.log("100円玉"+b+"枚, 10円玉"+d+"枚, 1円玉"+e+"枚");
+const input = process.argv[2];
+let hundred =Math.floor(input/100);
+let under = input-hundred*100
+let ten =Math.floor(under/10);
+let one = input-hundred*100-ten*10;
+console.log("100円玉"+hundred+"枚, 10円玉"+ten+"枚, 1円玉"+one+"枚");
