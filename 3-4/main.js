@@ -1,11 +1,6 @@
-const a = process.argv[2];
-const b = process.argv[3];
-const string1 = a.toString();
-const string2 = b.toString();
-const array1 = Array.from(string1);
-const array2 = Array.from(string2);
-const rearray1 = array1.reverse();
-const rearray2 = array2.reverse();
-const reanum1 = Number(rearray1.join(""));
-const reanum2 = Number(rearray2.join(""));
-console.log(reanum1+reanum2);
+const a = process.argv[2].toString();
+const b = process.argv[3].toString();
+const array =(input)=>{
+    return Array.from(input).reverse();   
+}
+console.log(Number(array(a).join(""))+Number(array(b).join("")));
