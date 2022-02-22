@@ -12,7 +12,7 @@ let ninety = 0
 let hundred = 0
 for(let i=0; i<=students.length-1; i++){
     if(students[i]<10){
-        one += 1;
+         one += 1;
     }else if(students[i]<20){
         ten += 1;
     }else if(students[i]<30){
