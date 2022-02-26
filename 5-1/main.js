@@ -18,3 +18,7 @@ const profiles = {
     }
   ]
 }
+
+profiles.profiles.forEach((list)=>{
+  console.log(list.name+":"+list.age);
+})
