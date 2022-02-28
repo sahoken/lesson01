@@ -14,14 +14,14 @@ for(i=0; i<str.length; i++){
        array.push(1);
    }
 };
-const count_koharu = [];
-const count_haruko = [];
+let count_koharu=0;
+let count_haruko=0;
 for(j=0,k=1,n=2; j<array.length; j++,k++,n++){
     if(array[j]===1 && array[k]===2 && array[n]===0){
-     count_koharu.push(1);   
+     count_koharu++   
     }else if(array[j]===2 && array[k]===0 && array[n]===1){
-        count_haruko.push(2);
+     count_haruko++
     }
 }
-console.log("こはる:"+count_koharu.length);
-console.log("はるこ:"+count_haruko.length);
+console.log("こはる:"+count_koharu);
+console.log("はるこ:"+count_haruko);
